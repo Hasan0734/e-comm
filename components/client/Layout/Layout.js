@@ -2,11 +2,12 @@ import React from "react";
 import Header from "../Header/Header";
 import Navbar from "../Navbar/Navbar";
 
-export default function Layout() {
+export default function Layout({ children }) {
   return (
-    <div>
-          <Header />
-          <Navbar/>
+    <div className="container mx-auto px-5 py-5">
+      <Header />
+      <Navbar />
+      {children}
     </div>
   );
 }
