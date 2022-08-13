@@ -1,6 +1,7 @@
 @import "./partials/colors";
 @import "./partials/font";
 
+// header style
 .header_area {
   font-family: $myFont-2;
   font-style: normal;
@@ -30,6 +31,7 @@
   }
 }
 
+// navbar style
 .navbar_area {
   .title {
     font-family: $myFont;
@@ -49,8 +51,106 @@
       color: #262626;
       text-transform: uppercase;
     }
-    .active{
-        color: $primary;
+    .active {
+      color: $primary;
+    }
+  }
+}
+
+//offer banner landing page style
+
+.banner_section {
+  // padding: 211px 0px;
+  height: 653px;
+  background-repeat: no-repeat !important;
+  background-size: 100% 100% !important;
+  background-position: center center !important;
+  .banner_title {
+    font-family: $myFont;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 150%;
+    letter-spacing: 0.5px;
+    color: #ffffff;
+  }
+}
+
+// banner product section
+
+.banner_product {
+  position: absolute;
+  width: 100%;
+  left: 10%;
+  bottom: -42%;
+  .card {
+    padding: 20px 40px;
+    background-repeat: no-repeat !important;
+    background-size: 100% 100% !important;
+    width: 100%;
+    height: 358px;
+
+    .title {
+      font-family: $myFont;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 150%;
+      letter-spacing: 0.5px;
+      color: #223263;
+      width: 202px;
+    }
+    .prev_price {
+      font-family: $myFont;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 150%;
+      letter-spacing: 0.5px;
+      text-decoration-line: line-through;
+      color: #9098b1;
+    }
+    .discount {
+      font-family: $myFont;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 150%;
+      letter-spacing: 0.5px;
+      color: #fb7181;
+    }
+    .price {
+      font-family: "Raleway";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 180%;
+      letter-spacing: 0.5px;
+      color: #40bfff;
+    }
+  }
+  .first_card {
+    .discount_area {
+      bottom: 60px;
+    }
+    .price {
+      bottom: 15px;
+      right: 45px;
+    }
+  }
+  .second_card {
+    .discount_area {
+      bottom: 28px;
+      left: 35%;
+    }
+  }
+  .third_card {
+    .discount_area {
+      padding-top: 5px;
+    }
+    .price {
+      bottom: 15px;
+      right: 45px;
     }
   }
 }

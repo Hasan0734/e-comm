@@ -5,7 +5,7 @@ import SearchIcon from "../../Icons/SearchIcon";
 
 const Header = () => {
   return (
-    <header className="header_area">
+    <header className="header_area container mx-auto px-5 py-5">
       <div className="grid grid-cols-2">
         <div className="flex gap-3">
           <select>
