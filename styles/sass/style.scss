@@ -153,3 +153,45 @@
     }
   }
 }
+
+// footer section
+.footer_section {
+  background: #bcddfe;
+  .title {
+    font-family: "Poppins";
+    font-style: normal;
+    font-size: 18px;
+    line-height: 27px;
+    color: #22262a;
+    &_logo {
+      @extend .title;
+      font-weight: 700;
+    }
+    &_sub {
+      @extend .title;
+      font-weight: 500;
+    }
+    &_another {
+      @extend .title;
+      font-weight: 400;
+    }
+  }
+
+  .content {
+    font-family: "Proxima Nova";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #22262a;
+  }
+
+  .item {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #262626;
+  }
+}
