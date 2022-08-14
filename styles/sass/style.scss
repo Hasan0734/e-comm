@@ -153,6 +153,141 @@
     }
   }
 }
+// best seller products section
+
+.best_seller_section {
+  .section_title {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 52px;
+    color: #22262a;
+  }
+  .tab_area {
+    .tab_item {
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 22px;
+      line-height: 33px;
+      color: #262626;
+      position: relative;
+
+      &::after {
+        position: absolute;
+        content: "";
+        transition: 0.6s;
+      }
+      &:hover:after {
+        position: absolute;
+        content: "";
+        height: 4px;
+        bottom: -6px;
+        left: 0;
+        width: 100%;
+        background: #33a0ff;
+      }
+    }
+  }
+  .active {
+    color: #33a0ff !important;
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: "";
+      height: 4px;
+      bottom: -6px;
+      left: 0;
+      width: 100%;
+      background: #33a0ff;
+      transition: 0.5s;
+    }
+  }
+}
+
+// product card
+
+.card {
+  box-shadow: 0px 1px 13px 3px #fbfbfb;
+
+  .card_image {
+    cursor: pointer !important;
+
+    &:hover .add_card {
+      opacity: 0.95;
+    }
+  }
+
+  .add_card {
+    top: 16px;
+    width: 310px;
+    height: 290px;
+    background: #ffffff;
+    opacity: 0;
+    transition: all 0.6s;
+    left: 19px;
+    border-radius: 5px;
+  }
+
+  .card_body {
+    padding: 17px 25px;
+    .h_text {
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 18px;
+      letter-spacing: 0.5px;
+    }
+    .card_title {
+      @extend .h_text;
+      color: #223263;
+      line-height: 150%;
+    }
+    .card_price {
+      @extend .h_text;
+      color: #40bfff;
+      line-height: 180%;
+    }
+    .prev_dis {
+      font-family: "Poppins";
+      font-style: normal;
+      font-size: 14px;
+      line-height: 150%;
+      letter-spacing: 0.5px;
+    }
+    .prev_price {
+      @extend .prev_dis;
+      text-decoration-line: line-through;
+      font-weight: 400;
+      color: #9098b1;
+    }
+    .discount {
+      @extend .prev_dis;
+      font-weight: 700;
+      color: #fb7181;
+    }
+  }
+
+  .favorite {
+    padding: 15px;
+    border: 2px solid #33a0ff;
+    border-radius: 50%;
+    transition: 0.5s;
+    svg {
+      fill: #33a0ff;
+      transition: 0.5s;
+    }
+    &:hover {
+      background: #33a0ff;
+    }
+
+    &:hover svg {
+      fill: #ffffff;
+    }
+  }
+}
 
 // footer section
 .footer_section {

@@ -47,7 +47,7 @@ const footerMenu = [
 const Footer = () => {
   return (
     <footer className="footer_section pt-32">
-      <div className="container mx-auto">
+      <div className="container mx-auto px-5">
         {/* first section */}
         <div className="grid grid-cols-3">
           <div className="pr-[17.5rem]">
