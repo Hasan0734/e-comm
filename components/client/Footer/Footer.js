@@ -49,8 +49,8 @@ const Footer = () => {
     <footer className="footer_section pt-32">
       <div className="container mx-auto px-5">
         {/* first section */}
-        <div className="grid grid-cols-3">
-          <div className="pr-[17.5rem]">
+        <div className="grid grid-cols-1 md:grid-cols-3">
+          <div className="md:pr-[17.5rem]">
             <div className="flex gap-2 items-center">
               <img className="w-11" src="/assets/logoIcon.svg" alt="logo" />
               <span className="title_logo">E-Comm</span>
@@ -61,14 +61,14 @@ const Footer = () => {
               text ever.Since the 1500s, when an unknown printer.
             </p>
           </div>
-          <div className="pr-[17.5rem]">
+          <div className="md:pr-[17.5rem]">
             <h2 className="title_sub">Follow Us</h2>
             <p className="content py-9">
               Since the 1500s, when an unknown printer took a galley of type and
               scrambled.
             </p>
           </div>
-          <div className="pr-[17.5rem]">
+          <div className="md:pr-[17.5rem]">
             <h2 className="title_sub">Contact Us</h2>
             <p className="content py-9">
               E-Comm , 4578
@@ -79,7 +79,7 @@ const Footer = () => {
         </div>
 
         {/* second section */}
-        <div className="grid grid-cols-4 mt-12 mb-12">
+        <div className="grid grid-1 md:grid-cols-4 mt-12 mb-12">
           {footerMenu.map((menu, i) => (
             <div key={menu.id}>
               <h3 className="title_another">{menu.title}</h3>
@@ -96,22 +96,22 @@ const Footer = () => {
           ))}
         </div>
         {/* third section */}
-        <div className="bg-[#F6F7F8] h-[2px] mx-10" />
+        <div className="bg-[#F6F7F8] h-[2px] md:mx-10" />
 
-        <div className="grid grid-cols-2 py-6 px-16">
+        <div className="grid grid-cols-2 py-6  md:px-16">
           <div>© 2018 Ecommerce theme by www.bisenbaev.com</div>
           <div className="flex justify-end gap-3">
             <div>
-              <img src="/assets/payment/Western-union.png" />
+              <img src="/assets/payment/Western-union.png" alt="pay img" />
             </div>
             <div>
-              <img src="/assets/payment/mastercard.png" />
+              <img src="/assets/payment/mastercard.png" alt="pay img" />
             </div>
             <div>
-              <img src="/assets/payment/Paypal.png" />
+              <img src="/assets/payment/Paypal.png" alt="pay img" />
             </div>
             <div>
-              <img src="/assets/payment/visa.png" />
+              <img src="/assets/payment/visa.png" alt="pay img" />
             </div>
           </div>
         </div>

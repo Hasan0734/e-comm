@@ -1,7 +1,7 @@
 import React from "react";
 export default function BannerProducts() {
   return (
-    <div className="banner_product">
+    <div className="banner_product hidden md:block">
       <div className="container mx-auto px-5 py-5 ">
         <div className="grid grid-cols-3 bg-[#f6f6f6]">
           {/* first card */}
